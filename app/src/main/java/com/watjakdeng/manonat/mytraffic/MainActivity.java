@@ -10,7 +10,7 @@ import android.widget.ListView;
 public class MainActivity extends AppCompatActivity {
 
 
-        // Explicit หรือ การประกาศตัวแปร
+        // Explicit ส่วนของการประกาศตัวแปร
     private ListView trafficListView;
     private Button aboutMeButton;
 
@@ -25,12 +25,13 @@ public class MainActivity extends AppCompatActivity {
         trafficListView = (ListView) findViewById(R.id.listView);
         aboutMeButton = (Button) findViewById(R.id.button);
 
-        // การทำcontroller  buttom ไอ้ข้างล่างตั้งชื่อเอาเองนะ -ที่นี้ conv  ข้างหลังเซมิ กด alt enter จะมีตัวช่วยขึ้นมาเลือกมัน
+        // การทำcontroller  buttom ไอ้ข้างล่างตั้งชื่อเอาเองนะ -ที่นี้ conv
+        // ข้างหลังเซมิ กด alt enter จะมีตัวช่วยขึ้นมาเลือกมัน
         controllerButton();
 
 
 
-    }  // Main Method นี่คือ เมธอดหลัก
+    }  // Main Method จบส่วนของเมธอดหลัก
 
     private void controllerButton() {
 
@@ -40,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
 
               // การใส่เสียงทำซาวด์เอฟเฟคประกอบการคลิกปุ่ม
               MediaPlayer mediaPlayer = MediaPlayer.create(getBaseContext(), R.raw.cat);
-
               mediaPlayer.start();
 
 
@@ -55,4 +55,4 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-} //Main class นี่คือ คลาสหลักจร้า
+} //Main class จบส่วนของคลาสหลักจร้า
