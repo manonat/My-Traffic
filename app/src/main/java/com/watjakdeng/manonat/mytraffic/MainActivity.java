@@ -1,6 +1,8 @@
 package com.watjakdeng.manonat.mytraffic;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -13,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
         // Explicit ส่วนของการประกาศตัวแปร
     private ListView trafficListView;
     private Button aboutMeButton;
+    private String urlYoutubeString = "https://youtu.be/irHZ4AIUUWk";
 
 
 
@@ -42,6 +45,12 @@ public class MainActivity extends AppCompatActivity {
               // การใส่เสียงทำซาวด์เอฟเฟคประกอบการคลิกปุ่ม
               MediaPlayer mediaPlayer = MediaPlayer.create(getBaseContext(), R.raw.cat);
               mediaPlayer.start();
+
+
+              //การทำ "web view youtube
+              Intent intent = new Intent(Intent.ACTION_VIEW);
+              intent.setData(Uri.parse(urlYoutubeString));
+              startActivity(intent);
 
 
 
